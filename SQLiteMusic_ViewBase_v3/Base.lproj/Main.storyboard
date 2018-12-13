@@ -1,24 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cwz-B4-yvj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="QOD-w4-zIm">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="Cwz-B4-yvj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Oz-jJ-3Jb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iID-Lv-DMe" kind="relationship" relationship="rootViewController" id="0D8-OM-KGG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYb-gG-Mp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1676" y="-71"/>
+        </scene>
+        <!--Album-->
+        <scene sceneID="u2B-2c-VmV">
+            <objects>
+                <viewController id="LFw-oh-bCm" customClass="AlbumViewController" customModule="SQLiteMusic_ViewBase_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Trd-xO-J8O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wrH-Tf-yL3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wrH-Tf-yL3" firstAttribute="leading" secondItem="Tjn-iR-j2g" secondAttribute="leading" id="Ldz-Qp-eFJ"/>
+                            <constraint firstItem="wrH-Tf-yL3" firstAttribute="bottom" secondItem="Tjn-iR-j2g" secondAttribute="bottom" id="aG1-dx-Ebx"/>
+                            <constraint firstItem="wrH-Tf-yL3" firstAttribute="trailing" secondItem="Tjn-iR-j2g" secondAttribute="trailing" id="ehh-28-Egk"/>
+                            <constraint firstItem="wrH-Tf-yL3" firstAttribute="top" secondItem="Tjn-iR-j2g" secondAttribute="top" id="qgg-C0-Slv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tjn-iR-j2g"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Album" id="o8c-Ws-7KI" customClass="Al"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLd-jc-yqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="145" y="263"/>
+        </scene>
+        <!--Song-->
+        <scene sceneID="KDc-9i-tpq">
+            <objects>
+                <viewController id="ikW-Vj-aFQ" customClass="SongViewController" customModule="SQLiteMusic_ViewBase_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XSD-F8-0aY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gAJ-si-6u1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gAJ-si-6u1" firstAttribute="leading" secondItem="0Ll-9p-m0G" secondAttribute="leading" id="4Qb-wI-Vov"/>
+                            <constraint firstItem="gAJ-si-6u1" firstAttribute="top" secondItem="0Ll-9p-m0G" secondAttribute="top" id="ITO-Ip-ucD"/>
+                            <constraint firstItem="gAJ-si-6u1" firstAttribute="bottom" secondItem="0Ll-9p-m0G" secondAttribute="bottom" id="ZSt-tA-tvL"/>
+                            <constraint firstItem="gAJ-si-6u1" firstAttribute="trailing" secondItem="0Ll-9p-m0G" secondAttribute="trailing" id="gls-Jo-AtJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Ll-9p-m0G"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Song" id="Iu4-vq-twm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZY-mI-Iwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="-402"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yri-I5-fSj">
+            <objects>
+                <tabBarController id="iID-Lv-DMe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Uiv-hD-Op9">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="btn_add" id="IrU-uL-ZAy">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="btn_search" id="LlF-W6-PXn">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aLg-HQ-Meb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ikW-Vj-aFQ" kind="relationship" relationship="viewControllers" id="lvT-DF-F6H"/>
+                        <segue destination="LFw-oh-bCm" kind="relationship" relationship="viewControllers" id="U6e-4b-kVH"/>
+                        <segue destination="7d6-Z0-kif" kind="relationship" relationship="viewControllers" id="ULS-be-BCs"/>
+                        <segue destination="x0v-qy-S8d" kind="relationship" relationship="viewControllers" id="1uv-zu-5Dc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckl-PW-C4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="-70"/>
+        </scene>
+        <!--Playlist-->
+        <scene sceneID="8N3-Oq-JL2">
+            <objects>
+                <viewController id="x0v-qy-S8d" customClass="PlaylistViewController" customModule="SQLiteMusic_ViewBase_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dVq-Nu-gY7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SD7-qO-Uss">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SD7-qO-Uss" firstAttribute="bottom" secondItem="1H4-sc-NFr" secondAttribute="bottom" id="4QY-G9-kEg"/>
+                            <constraint firstItem="SD7-qO-Uss" firstAttribute="leading" secondItem="1H4-sc-NFr" secondAttribute="leading" id="OOi-3I-egc"/>
+                            <constraint firstAttribute="trailing" secondItem="SD7-qO-Uss" secondAttribute="trailing" id="iFW-nF-ai2"/>
+                            <constraint firstItem="SD7-qO-Uss" firstAttribute="top" secondItem="1H4-sc-NFr" secondAttribute="top" id="pnd-jO-AFQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1H4-sc-NFr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Playlist" id="pX5-TD-4lv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cft-w5-nEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="790"/>
+        </scene>
+        <!--Artist-->
+        <scene sceneID="Xq6-sb-T4j">
+            <objects>
+                <viewController id="7d6-Z0-kif" customClass="ArtistViewController" customModule="SQLiteMusic_ViewBase_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OGD-cV-y68">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XWe-un-vMJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XWe-un-vMJ" firstAttribute="trailing" secondItem="JDY-KB-W4D" secondAttribute="trailing" id="5JZ-Jw-6KG"/>
+                            <constraint firstItem="XWe-un-vMJ" firstAttribute="top" secondItem="JDY-KB-W4D" secondAttribute="top" id="AaD-6e-hNl"/>
+                            <constraint firstItem="XWe-un-vMJ" firstAttribute="leading" secondItem="JDY-KB-W4D" secondAttribute="leading" id="ipL-sG-WXG"/>
+                            <constraint firstItem="XWe-un-vMJ" firstAttribute="bottom" secondItem="JDY-KB-W4D" secondAttribute="bottom" id="sZs-Jf-lMz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JDY-KB-W4D"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Artist" id="IIy-L3-jy1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lh6-3h-eTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1676" y="790.25487256371821"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="10.jpg" width="640" height="640"/>
+        <image name="7.jpg" width="640" height="640"/>
+        <image name="8.jpg" width="1704" height="2048"/>
+        <image name="9.jpg" width="640" height="640"/>
+        <image name="btn_add" width="30" height="30"/>
+        <image name="btn_search" width="30" height="30.5"/>
+    </resources>
 </document>

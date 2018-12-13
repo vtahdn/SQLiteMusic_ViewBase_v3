@@ -10,10 +10,28 @@
 		292B242121C205CC00D0022A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B242021C205CC00D0022A /* AppDelegate.swift */; };
 		292B242321C205CC00D0022A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B242221C205CC00D0022A /* ViewController.swift */; };
 		292B242621C205CC00D0022A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B242421C205CC00D0022A /* Main.storyboard */; };
-		292B242821C205CD00D0022A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292B242721C205CD00D0022A /* Assets.xcassets */; };
 		292B242B21C205CD00D0022A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292B242921C205CD00D0022A /* LaunchScreen.storyboard */; };
 		292B243621C205CD00D0022A /* SQLiteMusic_ViewBase_v3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B243521C205CD00D0022A /* SQLiteMusic_ViewBase_v3Tests.swift */; };
 		292B244121C205CD00D0022A /* SQLiteMusic_ViewBase_v3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B244021C205CD00D0022A /* SQLiteMusic_ViewBase_v3UITests.swift */; };
+		292B245021C205E600D0022A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 292B244F21C205E600D0022A /* libsqlite3.dylib */; };
+		292B245221C205FE00D0022A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292B245121C205FD00D0022A /* Assets.xcassets */; };
+		292B246621C2060900D0022A /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 292B245521C2060900D0022A /* 8.jpg */; };
+		292B246721C2060900D0022A /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 292B245621C2060900D0022A /* 9.jpg */; };
+		292B246821C2060900D0022A /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 292B245721C2060900D0022A /* 10.jpg */; };
+		292B246921C2060900D0022A /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 292B245821C2060900D0022A /* 7.jpg */; };
+		292B247B21C2062400D0022A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 292B247021C2062300D0022A /* FMDatabaseQueue.m */; };
+		292B247C21C2062400D0022A /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 292B247121C2062400D0022A /* FMDatabase.m */; };
+		292B247D21C2062400D0022A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 292B247221C2062400D0022A /* FMDatabasePool.m */; };
+		292B247E21C2062400D0022A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 292B247421C2062400D0022A /* FMDatabaseAdditions.m */; };
+		292B247F21C2062400D0022A /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 292B247921C2062400D0022A /* FMResultSet.m */; };
+		292B248221C2076200D0022A /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B248121C2076200D0022A /* DataBase.swift */; };
+		292B248521C2157800D0022A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B248421C2157800D0022A /* AlbumViewController.swift */; };
+		292B248721C2158E00D0022A /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B248621C2158E00D0022A /* ArtistViewController.swift */; };
+		292B248921C215AA00D0022A /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B248821C215AA00D0022A /* PlaylistViewController.swift */; };
+		292B248B21C215B900D0022A /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B248A21C215B900D0022A /* SongViewController.swift */; };
+		292B248E21C215FA00D0022A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B248D21C215FA00D0022A /* BaseViewController.swift */; };
+		292B249021C2161200D0022A /* TableBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B248F21C2161200D0022A /* TableBaseViewController.swift */; };
+		292B249221C2163D00D0022A /* CollectionBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B249121C2163D00D0022A /* CollectionBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +56,6 @@
 		292B242021C205CC00D0022A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		292B242221C205CC00D0022A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		292B242521C205CC00D0022A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		292B242721C205CD00D0022A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		292B242A21C205CD00D0022A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		292B242C21C205CD00D0022A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		292B243121C205CD00D0022A /* SQLiteMusic_ViewBase_v3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteMusic_ViewBase_v3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +64,32 @@
 		292B243C21C205CD00D0022A /* SQLiteMusic_ViewBase_v3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteMusic_ViewBase_v3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		292B244021C205CD00D0022A /* SQLiteMusic_ViewBase_v3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteMusic_ViewBase_v3UITests.swift; sourceTree = "<group>"; };
 		292B244221C205CD00D0022A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292B244F21C205E600D0022A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		292B245121C205FD00D0022A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292B245521C2060900D0022A /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		292B245621C2060900D0022A /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		292B245721C2060900D0022A /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		292B245821C2060900D0022A /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		292B246F21C2062300D0022A /* SQLiteMusic_ViewBase_v3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLiteMusic_ViewBase_v3-Bridging-Header.h"; sourceTree = "<group>"; };
+		292B247021C2062300D0022A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		292B247121C2062400D0022A /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		292B247221C2062400D0022A /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		292B247321C2062400D0022A /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		292B247421C2062400D0022A /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		292B247521C2062400D0022A /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		292B247621C2062400D0022A /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		292B247721C2062400D0022A /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		292B247821C2062400D0022A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		292B247921C2062400D0022A /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		292B247A21C2062400D0022A /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		292B248121C2076200D0022A /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		292B248421C2157800D0022A /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		292B248621C2158E00D0022A /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		292B248821C215AA00D0022A /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		292B248A21C215B900D0022A /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		292B248D21C215FA00D0022A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		292B248F21C2161200D0022A /* TableBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBaseViewController.swift; sourceTree = "<group>"; };
+		292B249121C2163D00D0022A /* CollectionBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292B245021C205E600D0022A /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +125,7 @@
 				292B243421C205CD00D0022A /* SQLiteMusic_ViewBase_v3Tests */,
 				292B243F21C205CD00D0022A /* SQLiteMusic_ViewBase_v3UITests */,
 				292B241E21C205CC00D0022A /* Products */,
+				292B244E21C205E500D0022A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +142,14 @@
 		292B241F21C205CC00D0022A /* SQLiteMusic_ViewBase_v3 */ = {
 			isa = PBXGroup;
 			children = (
+				292B248C21C215E900D0022A /* Base */,
+				292B248321C2155B00D0022A /* View */,
+				292B248021C2073100D0022A /* DataBase */,
+				292B245321C2060900D0022A /* Resource */,
 				292B242021C205CC00D0022A /* AppDelegate.swift */,
 				292B242221C205CC00D0022A /* ViewController.swift */,
 				292B242421C205CC00D0022A /* Main.storyboard */,
-				292B242721C205CD00D0022A /* Assets.xcassets */,
+				292B245121C205FD00D0022A /* Assets.xcassets */,
 				292B242921C205CD00D0022A /* LaunchScreen.storyboard */,
 				292B242C21C205CD00D0022A /* Info.plist */,
 			);
@@ -123,6 +172,82 @@
 				292B244221C205CD00D0022A /* Info.plist */,
 			);
 			path = SQLiteMusic_ViewBase_v3UITests;
+			sourceTree = "<group>";
+		};
+		292B244E21C205E500D0022A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				292B244F21C205E600D0022A /* libsqlite3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		292B245321C2060900D0022A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				292B245421C2060900D0022A /* imgs */,
+				292B245921C2060900D0022A /* fmdb */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		292B245421C2060900D0022A /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				292B245521C2060900D0022A /* 8.jpg */,
+				292B245621C2060900D0022A /* 9.jpg */,
+				292B245721C2060900D0022A /* 10.jpg */,
+				292B245821C2060900D0022A /* 7.jpg */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
+		292B245921C2060900D0022A /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				292B247721C2062400D0022A /* FMDatabase.h */,
+				292B247121C2062400D0022A /* FMDatabase.m */,
+				292B247821C2062400D0022A /* FMDatabaseAdditions.h */,
+				292B247421C2062400D0022A /* FMDatabaseAdditions.m */,
+				292B247A21C2062400D0022A /* FMDatabasePool.h */,
+				292B247221C2062400D0022A /* FMDatabasePool.m */,
+				292B247521C2062400D0022A /* FMDatabaseQueue.h */,
+				292B247021C2062300D0022A /* FMDatabaseQueue.m */,
+				292B247321C2062400D0022A /* FMDB.h */,
+				292B247621C2062400D0022A /* FMResultSet.h */,
+				292B247921C2062400D0022A /* FMResultSet.m */,
+				292B246F21C2062300D0022A /* SQLiteMusic_ViewBase_v3-Bridging-Header.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		292B248021C2073100D0022A /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				292B248121C2076200D0022A /* DataBase.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		292B248321C2155B00D0022A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				292B248421C2157800D0022A /* AlbumViewController.swift */,
+				292B248621C2158E00D0022A /* ArtistViewController.swift */,
+				292B248821C215AA00D0022A /* PlaylistViewController.swift */,
+				292B248A21C215B900D0022A /* SongViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		292B248C21C215E900D0022A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				292B248D21C215FA00D0022A /* BaseViewController.swift */,
+				292B248F21C2161200D0022A /* TableBaseViewController.swift */,
+				292B249121C2163D00D0022A /* CollectionBaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +318,7 @@
 				TargetAttributes = {
 					292B241C21C205CC00D0022A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					292B243021C205CD00D0022A = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,8 +355,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292B246621C2060900D0022A /* 8.jpg in Resources */,
 				292B242B21C205CD00D0022A /* LaunchScreen.storyboard in Resources */,
-				292B242821C205CD00D0022A /* Assets.xcassets in Resources */,
+				292B245221C205FE00D0022A /* Assets.xcassets in Resources */,
+				292B246921C2060900D0022A /* 7.jpg in Resources */,
+				292B246721C2060900D0022A /* 9.jpg in Resources */,
+				292B246821C2060900D0022A /* 10.jpg in Resources */,
 				292B242621C205CC00D0022A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +386,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292B248E21C215FA00D0022A /* BaseViewController.swift in Sources */,
 				292B242321C205CC00D0022A /* ViewController.swift in Sources */,
+				292B249021C2161200D0022A /* TableBaseViewController.swift in Sources */,
 				292B242121C205CC00D0022A /* AppDelegate.swift in Sources */,
+				292B247F21C2062400D0022A /* FMResultSet.m in Sources */,
+				292B248521C2157800D0022A /* AlbumViewController.swift in Sources */,
+				292B247D21C2062400D0022A /* FMDatabasePool.m in Sources */,
+				292B247B21C2062400D0022A /* FMDatabaseQueue.m in Sources */,
+				292B247C21C2062400D0022A /* FMDatabase.m in Sources */,
+				292B248921C215AA00D0022A /* PlaylistViewController.swift in Sources */,
+				292B248221C2076200D0022A /* DataBase.swift in Sources */,
+				292B249221C2163D00D0022A /* CollectionBaseViewController.swift in Sources */,
+				292B248B21C215B900D0022A /* SongViewController.swift in Sources */,
+				292B247E21C2062400D0022A /* FMDatabaseAdditions.m in Sources */,
+				292B248721C2158E00D0022A /* ArtistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGY9E5E6J5;
 				INFOPLIST_FILE = SQLiteMusic_ViewBase_v3/Info.plist;
@@ -441,6 +585,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Senegal.SQLiteMusic-ViewBase-v3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteMusic_ViewBase_v3/Resource/fmdb/SQLiteMusic_ViewBase_v3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGY9E5E6J5;
 				INFOPLIST_FILE = SQLiteMusic_ViewBase_v3/Info.plist;
@@ -459,6 +606,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Senegal.SQLiteMusic-ViewBase-v3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteMusic_ViewBase_v3/Resource/fmdb/SQLiteMusic_ViewBase_v3-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
