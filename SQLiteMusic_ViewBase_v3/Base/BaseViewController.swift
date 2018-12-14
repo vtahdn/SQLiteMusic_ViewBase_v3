@@ -20,7 +20,8 @@ class BaseViewController: UIViewController {
     }
     
     // addBtn_Title()
-    var titleButton = { (_ btn_Title: UIButton,_ viewController: UIViewController) in
+    var titleButton = { (_ btn_Title: UIButton,_ viewController: BaseViewController) in
+        
         btn_Title.setTitle("Linggka Team", for: .normal)
         btn_Title.setTitleColor(.gray, for: .highlighted)
         btn_Title.addTarget(self, action: #selector(chooseOrder), for: .touchUpInside)
@@ -32,11 +33,15 @@ class BaseViewController: UIViewController {
 //        let cn3 = NSLayoutConstraint(item: btn_Title, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 40)
 //        let cn4 = NSLayoutConstraint(item: btn_Title, attribute: .top, relatedBy: .equal, toItem: viewController.view, attribute: .top, multiplier: 1, constant: 88)
 //        NSLayoutConstraint.activate([cn1, cn2, cn3, cn4])
-        let _ = Constrain(btn_Title, viewController)
+        
+//        let _ = Constrain(btn_Title, viewController)
+        viewController.constrain(btn_Title, viewController)
+        
     }
     
     // addTxt_Search
-    var searchTextField = { (_ txt_Search: UITextField, _ viewController: UIViewController) in
+    var searchTextField = { (_ txt_Search: UITextField, _ viewController: BaseViewController) in
+        
         txt_Search.isHidden = true
         txt_Search.borderStyle = .roundedRect
         txt_Search.placeholder = "Enter name here"
@@ -47,20 +52,34 @@ class BaseViewController: UIViewController {
 //        let cn3 = NSLayoutConstraint(item: txt_Search, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 40)
 //        let cn4 = NSLayoutConstraint(item: txt_Search, attribute: .top, relatedBy: .equal, toItem: viewController.view, attribute: .top, multiplier: 1, constant: 88)
 //        NSLayoutConstraint.activate([cn1, cn2, cn3, cn4])
-        let _ = Constrain(txt_Search, viewController)
+    
+//        let _ = Constrain(txt_Search, viewController)
+        viewController.constrain(txt_Search, viewController)
+        
     }
     
-    struct Constrain {
-        
-        init(_ item: Any,_ viewController: UIViewController) {
-            let cn1 = NSLayoutConstraint(item: item, attribute: .leading, relatedBy: .equal, toItem: viewController.view, attribute: .leading, multiplier: 1, constant: 0)
-            let cn2 = NSLayoutConstraint(item: item, attribute: .trailing, relatedBy: .equal, toItem: viewController.view, attribute: .trailing, multiplier: 1, constant: 0)
-            let cn3 = NSLayoutConstraint(item: item, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 40)
-            let cn4 = NSLayoutConstraint(item: item, attribute: .top, relatedBy: .equal, toItem: viewController.view, attribute: .top, multiplier: 1, constant: 88)
-            NSLayoutConstraint.activate([cn1, cn2, cn3, cn4])
-        }
+    var constrain = { (_ item: AnyObject,_ viewController: BaseViewController) in
+
+//        item.translatesAutoresizingMaskIntoConstraints = translates
+        let cn1 = NSLayoutConstraint(item: item, attribute: .leading, relatedBy: .equal, toItem: viewController.view, attribute: .leading, multiplier: 1, constant: 0)
+        let cn2 = NSLayoutConstraint(item: item, attribute: .trailing, relatedBy: .equal, toItem: viewController.view, attribute: .trailing, multiplier: 1, constant: 0)
+        let cn3 = NSLayoutConstraint(item: item, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 40)
+        let cn4 = NSLayoutConstraint(item: item, attribute: .top, relatedBy: .equal, toItem: viewController.view, attribute: .top, multiplier: 1, constant: 88)
+        NSLayoutConstraint.activate([cn1, cn2, cn3, cn4])
         
     }
+    
+//    struct Constrain {
+//
+//        init(_ item: Any,_ viewController: UIViewController) {
+//            let cn1 = NSLayoutConstraint(item: item, attribute: .leading, relatedBy: .equal, toItem: viewController.view, attribute: .leading, multiplier: 1, constant: 0)
+//            let cn2 = NSLayoutConstraint(item: item, attribute: .trailing, relatedBy: .equal, toItem: viewController.view, attribute: .trailing, multiplier: 1, constant: 0)
+//            let cn3 = NSLayoutConstraint(item: item, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 40)
+//            let cn4 = NSLayoutConstraint(item: item, attribute: .top, relatedBy: .equal, toItem: viewController.view, attribute: .top, multiplier: 1, constant: 88)
+//            NSLayoutConstraint.activate([cn1, cn2, cn3, cn4])
+//        }
+//
+//    }
 
     
     override func viewDidLoad() {
